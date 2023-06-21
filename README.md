@@ -14,7 +14,7 @@
 
 ![img.png](img/img1.png)
 
-В качестве управляющего элемента используем raspberry pi.
+В качестве управляющего элемента используем Pixhawk, для обработки изображний во время полета служит Raspberry Pi.
 
 ![img.png](img/img2.png)
 
@@ -23,6 +23,7 @@
 * opencv
 * ultralytics
 * pygpio
+* dronekit
 	
 ## БРЭО
 #### Директория _БРЭО_
