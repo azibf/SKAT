@@ -20,6 +20,7 @@ def arm_and_takeoff(tgt_attitude):
 
     vehicle.mode = VehicleMode("GUIDED")
     vehicle.armed = True
+    vehicle.airspeed = 7
 
     vehicle.simple_takeoff(tgt_attitude)
     while True:
@@ -28,8 +29,9 @@ def arm_and_takeoff(tgt_attitude):
             print('reached')
             break
 
+
 arm_and_takeoff(10)
-vehicle.airspeed = 7
+
 
 wpl = LocationGlobalRelative(35.9835973, -95.8742309, 10)
 vehicle.simple_goto(wpl)
