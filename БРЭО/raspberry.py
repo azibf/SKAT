@@ -5,7 +5,8 @@ import time
 P7 = 7 # Открыть закрыть задвижку
 P9 = 9 # ground
 
-class Robot:
+
+class Brain:
     def __init__(self, db, mediator, pins):
         self.db = db
         self.mediator = mediator
